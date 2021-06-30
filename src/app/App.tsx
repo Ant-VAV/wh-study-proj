@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import '../index.html';
-// @ts-ignore
 import logo from '../sources/logo.png';
 
 export default function App() {
