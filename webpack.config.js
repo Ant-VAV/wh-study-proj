@@ -19,7 +19,16 @@ module.exports = {
             test: /\.(j|t)sx?$/,
             exclude: /node_modules/,
             use: 'babel-loader'
-        }]
+        }, {
+            test: /\.(png|woff|woff2|eot|jpg)$/i,
+            exclude: /node_modules/,
+            use: ['file-loader']
+        }, {
+            test: /\.html$/i,
+            exclude: /node_modules/,
+            loader: 'html-loader',
+        }
+        ]
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
