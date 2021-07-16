@@ -1,0 +1,85 @@
+:root {
+    --content-wight: 1280px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
+    background-color: #6B6B6B;
+}
+
+.header {
+    height: 100px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.headerContent {
+    max-width: var(--content-wight);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    background-color: blue;
+    height: 100px;
+    width: 125px;
+}
+
+.logoAndSelector {
+    display: flex;
+}
+
+.selectCampaignButton {
+    margin: auto 0 auto 10px;
+    font-size: inherit;
+    height: 35px;
+    background-color: #515151;
+    border: none;
+    color: inherit;
+    padding: 0 5px;
+}
+
+.selectCampaignButton:hover {
+    background-color: #B1B1B1;
+}
+
+.loginLink {
+    margin: auto 0;
+}
+
+.loginLink a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
+
+.greyLine {
+    height: 30px;
+    background-color: #B1B1B1;
+}
+
+.lineMenu {
+    max-width: var(--content-wight);
+    margin: 0 auto;
+}
+
+.content{
+    max-width: var(--content-wight);
+    min-height: 500px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+}
+
+.footer{
+    max-width: var(--content-wight);
+    min-height: 50px;
+    background-color: #B1B1B1;
+    margin: 0 auto;
+}
