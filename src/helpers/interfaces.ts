@@ -1,4 +1,4 @@
-export interface CampaignItem {
+export interface ICampaignItem {
   campaignId: string,
   campaignName: string,
   campaignDescription: string

@@ -1,5 +1,15 @@
 import React from "react";
+import { ICampaignItem } from "../../helpers/interfaces";
+import './CampaignItem.css';
 
-export default function CampaignItem() {
-  return <div>Best campaign Ever</div>
+interface ICampaignItemProp {
+  element: ICampaignItem
+}
+
+export default function CampaignItem(props: ICampaignItemProp) {
+  const {campaignName, campaignDescription} = props.element;
+  return <>
+    <h2>{campaignName}</h2>
+    <span>{campaignDescription}</span>
+  </>
 }
