@@ -1,0 +1,19 @@
+.campaignList {
+    padding: 20px;
+}
+
+.skeletons {
+    display: flex;
+    height: 125px;
+    background-color: #B1B1B1;
+    border-radius: 5px;
+}
+
+.imgSkeleton {
+    width: 125px;
+}
+
+.txtSkeletons {
+    width: calc(var(--content-wight) - 125px - 20px - 20px - 10px - 10px);
+    padding-left: 10px;
+}
