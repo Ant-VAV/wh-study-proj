@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 
-img {
+.logoImg {
     background-color: blue;
     height: 100px;
     width: 125px;

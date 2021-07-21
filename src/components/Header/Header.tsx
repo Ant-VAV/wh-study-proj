@@ -10,7 +10,7 @@ export default function Header(props: IHeaderProps) {
   return <div className={'header'}>
     <div className={'headerContent'}>
       <div className={'logoAndSelector'}>
-        <img src={logo} alt='logo'/>
+        <img src={logo} alt='logo' className={'logoImg'}/>
         {props.isCampaignSelect && <button className={'selectCampaignButton'}>Выбор кампании</button>}
       </div>
       <div className={'loginLink'}><a href={'#'}>Вход/Регистрация</a></div>
