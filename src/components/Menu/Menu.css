@@ -1,0 +1,9 @@
+.greyLine {
+    height: 30px;
+    background-color: #B1B1B1;
+}
+
+.lineMenu {
+    max-width: var(--content-wight);
+    margin: 0 auto;
+}

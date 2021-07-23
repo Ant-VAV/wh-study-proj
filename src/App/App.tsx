@@ -1,26 +1,18 @@
 import React from 'react';
 import './App.css';
 import '../index.html';
-import logo from '../sources/logo.png';
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Menu from "../components/Menu/Menu";
+import CampaignList from "../components/CampaignList/CampaignList";
 
 export default function App() {
   return <div className={'page'}>
-    <div className={'header'}>
-      <div className={'headerContent'}>
-        <div className={'logoAndSelector'}>
-          <img src={logo} width={'125px'} height={'100px'} alt='logo'/>
-          <button className={'selectCampaignButton'}>Выбор кампании</button>
-        </div>
-        <div className={'loginLink'}><a href={'#'}>Вход/Регистрация</a></div>
-      </div>
+    <Header isCampaignSelect={true}/>
+    <Menu/>
+    <div className={'content'}>
+      <CampaignList/>
     </div>
-    <div className={'greyLine'}>
-      <div className={'lineMenu'}>
-        Будут кнопки
-      </div>
-    </div>
-
-    <div className={'content'}>Тут контент</div>
-    <div className={'footer'}>Тут будет футер</div>
+    <Footer/>
   </div>;
 }
